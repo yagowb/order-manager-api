@@ -7,9 +7,9 @@ const orderController = require('../controllers/orderController.js');
 
 router.post('/', orderController.createOrder);
 
-router.get('/:id', orderController.getOrderById)
-
 router.get('/list', orderController.getAllOrders);
+
+router.get('/:id', orderController.getOrderById)
 
 router.put('/:id', orderController.updateOrderByID);
 
