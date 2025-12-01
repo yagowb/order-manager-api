@@ -5,15 +5,15 @@ const orderController = require('../controllers/orderController.js');
 
 
 
-router.post('/order', orderController.createOrder);
+router.post('/', orderController.createOrder);
 
-router.get('/order/:id', orderController.getOrderById)
+router.get('/:id', orderController.getOrderById)
 
-router.get('/order/list', orderController.getAllOrders);
+router.get('/list', orderController.getAllOrders);
 
-router.put('/order/:id', orderController.updateOrderByID);
+router.put('/:id', orderController.updateOrderByID);
 
-router.delete('/order/:id', orderController.deleteOrderById);
+router.delete('/:id', orderController.deleteOrderById);
 
 
 module.exports = router;
